@@ -6,8 +6,6 @@ Web application where users can create, delete or update banks and calculate mor
 ## Extension:
 - SQL ORM: https://flask-sqlalchemy.palletsprojects.com/en/2.x/
 
-***
-
 ## Installation:
 Install with pip:
 ```python
@@ -38,7 +36,7 @@ $ gunicorn -w 4 -b 127.0.0.1:5000 main:app
 
 ## Reference:
 Offical Website
-- https://flask.palletsprojects.com/en/2.0.x/
+- [Flask]https://flask.palletsprojects.com/en/2.0.x/
 - https://flask.palletsprojects.com/en/2.0.x/extensions/
 - https://flask-sqlalchemy.palletsprojects.com/en/2.x/
 - https://gunicorn.org/
