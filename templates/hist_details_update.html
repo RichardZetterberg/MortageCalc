@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block title %}
+Update info about bank
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1> Updating info: </h1>
+    <form method="post">
+        <input type="text" name="bank_name" id="bank_name" class="form-control" value="{{bank.bank_name}}" placeholder="Bank's name"><br>
+        
+        <input type="text" name="interest_rate" id="interest_rate" class="form-control" value="{{bank.interest_rate}}" placeholder="Interest rate"><br>
+        <input type="text" name="max_loan" id="max_loan" class="form-control" value="{{bank.max_loan}}" placeholder="Maximum loan"><br>
+        <input type="text" name="min_down_pay" id="min_down_pay" class="form-control" value="{{bank.min_down_pay}}" placeholder="Minimum down payment"><br>
+        <input type="text" name="loan_term" id="loan_term" class="form-control" value="{{bank.loan_term}}" placeholder="Loan term"><br>
+        <input type="text" name="branch_code" id="branch_code" class="form-control" value="{{bank.branch_code}}" placeholder="Branch code"><br>
+        <input type="text" name="currency" id="currency" class="form-control" value="{{bank.currency}}" placeholder="Currency"><br>
+        <input type="text" name="FIC" id="FIC" class="form-control" value="{{bank.FIC}}" placeholder="Financial Institution Country"><br>
+        <input type="text" name="GIIN" id="GIIN" class="form-control" value="{{bank.GIIN}}" placeholder="Global Intermediary Identification Number (GIIN)"><br>
+
+        <input type="submit" class="btn btn-success btn-block btn-lg" value="UPDATE">
+    </form>
+</div>
+{% endblock %}

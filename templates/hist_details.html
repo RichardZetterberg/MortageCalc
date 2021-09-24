@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block title %}
+{{ bank.bank_name }}
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1> Details of creation "{{ bank.bank_name }}" bank</h1>
+
+    <div class="alert alert-info">
+        <h2>Bank name: {{ bank.bank_name }}</h2>
+        <p><i>Interest rate:</i>>  {{ bank.interest_rate }} </p>
+        <p><i>Maximum loan:</i> {{ bank.max_loan }} </p>
+        <p><i>Minimum down payment:</i> {{ bank.min_down_pay }} </p>
+        <p><i>Loan term:</i> {{ bank.loan_term }} </p>
+        <p><i>Branch code:</i> {{ bank.branch_code }} </p>
+        <p><i>Financial Institution Country:</i> {{ bank.FIC }} </p>
+        <p><i>Global Intermediary Identification Number (GIIN):</i> {{ bank.GIIN }} </p>
+        <p><b>Date: {{ bank.date.date() }}</b></p>
+        <a href="{{bank.id}}/delete" class="btn btn-danger btn-lg pull-right">DELETE</a>
+        <a href="{{bank.id}}/update" class="btn btn-warning btn-lg pull-right">UPDATE</a>
+    </div>
+</div>
+{% endblock %}

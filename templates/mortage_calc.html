@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block title %}
+Mortage calculator
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1> Calculate monthly payment for your mortage: </h1>
+
+    <form method="POST" action="/print_result">
+        <div class="alert alert-info">
+            <input type="text" name="init_loan" id="init_loan" class="form-control" placeholder="Initial loan"><br>
+            <input type="text" name="down_pay" id="down_pay" class="form-control" placeholder="Down payment"><br>
+            <input type="text" name="bank" id="bank" class="form-control" placeholder="Bank's name"><br>
+            <button class="btn btn-warning btn-lg">CALCULATE</button>
+            {{ value }}
+        </div>
+    </form>
+
+</div>
+{% endblock %}

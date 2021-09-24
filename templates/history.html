@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block title %}
+History of banks creation
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1> Banks creation history: </h1>
+    {% if banks|length > 0 %}
+        {% for el in banks %}
+            <div class="alert alert-success">
+                <h2>{{ el.bank_name }}</h2>
+                <p> {{ el.currency }} </p>
+                <p><b>Date: {{ el.date.date() }}</b></p>
+                <a href="/history/{{ el.id }}" class="btn btn-info">Click for more details</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>History is empty</p>
+    {% endif %}
+</div>
+{% endblock %}
