@@ -37,13 +37,13 @@ $ gunicorn -w 4 -b 127.0.0.1:5000 main:app
 ## Reference:
 Offical Website
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/)
-- https://flask.palletsprojects.com/en/2.0.x/extensions/
-- https://flask-sqlalchemy.palletsprojects.com/en/2.x/
-- https://gunicorn.org/
+- [Flask extentions](https://flask.palletsprojects.com/en/2.0.x/extensions/)
+- [Flask-SQLalchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
+- [gunicorn](https://gunicorn.org/)
 
 
 Tutorial
-- https://www.slideshare.net/maxcnunes1/flask-python-16299282
-- https://igordavydenko.com/talks/ua-pycon-2012.pdf
+- [Flask Overview](https://www.slideshare.net/maxcnunes1/flask-python-16299282)
+- [In Flask we trust](https://igordavydenko.com/talks/ua-pycon-2012.pdf)
 
-https://github.com/tsungtwu/flask-example/wiki
+[WIKI](https://github.com/tsungtwu/flask-example/wiki)
