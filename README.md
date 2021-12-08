@@ -1,4 +1,4 @@
-# eliftechITTest
+# Moratge calculator
 
 All you need to see, you can find on master branch!
 
